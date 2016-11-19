@@ -1,9 +1,6 @@
-disp('What is the name of your image file?');
+function [negativeDoge] = ht222Recitation9Problem2(colorDoge)
 
-%uigetfile() prompts user to find the image.
-imgName = uigetfile('Enter here: ');
-img = imread(imgName);
+%Make the matrix negative to produce a negative image.
+[negativeDoge] = ht222Recitation9Problem1(colorDoge);
 
-imgReverse = imcomplement(img);
-%Call the method.
-imshow(imgReverse);
+end

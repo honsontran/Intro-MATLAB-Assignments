@@ -1,10 +1,6 @@
-disp('What is the name of your image file?');
+function [img] = ht222Recitation9Problem1(img)
 
-%uigetfile() prompts user to find the image.
-img = uigetfile('Enter here: ');
+%Make the matrix negative to produce a negative image.
+img = uint8(255-img); 
 
-%Read the image file.
-img = imread(img);
-img = rgb2gray(img);                     %Turns to greyscale.   
-img = imcomplement(img);              %Method turns to negative.
-output = imshow(img);                    %output image.
+end
